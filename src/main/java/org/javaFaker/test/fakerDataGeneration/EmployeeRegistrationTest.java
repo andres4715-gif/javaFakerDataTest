@@ -1,4 +1,4 @@
-package org.javaFaker.test;
+package org.javaFaker.test.fakerDataGeneration;
 
 import com.github.javafaker.Faker;
 import org.testng.annotations.BeforeMethod;
@@ -22,15 +22,23 @@ public class EmployeeRegistrationTest {
     }
 
     @Test
-    public void registerEmployee() {
+    public void EmployeeName() {
         System.out.println(employee.getFirstName());
     }
 
     @Test
-    public void registerListOfEmployee() {
+    public void nameListOfEmployee() {
         for(int i = 0; i <= 10; i++) {
             generateData();
             System.out.println(employee.getFirstName());
+        }
+    }
+
+    @Test
+    public void emailListOfEmployee() {
+        for(int i = 0; i <= 10; i++) {
+            generateData();
+            System.out.println(employee.getEmail());
         }
     }
 }
