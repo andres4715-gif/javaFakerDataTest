@@ -27,7 +27,10 @@ public class EmployeeRegistrationTest {
     }
 
     @Test
-    public void registerEmployee2() {
-        System.out.println(employee.getFirstName());
+    public void registerListOfEmployee() {
+        for(int i = 0; i <= 10; i++) {
+            generateData();
+            System.out.println(employee.getFirstName());
+        }
     }
 }
