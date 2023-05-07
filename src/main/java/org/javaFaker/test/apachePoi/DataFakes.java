@@ -18,7 +18,6 @@ import static java.util.stream.Collectors.toList;
 
 @UtilityClass
 public class DataFakes {
-
     public static List<Employee> getSetOfFakeDataOf(int size) {
         var faker = Faker.instance(Locale.forLanguageTag("es"));
         var random = faker.random();
